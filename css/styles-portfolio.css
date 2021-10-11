@@ -1,0 +1,150 @@
+/*
+Color Palette:
+
+#003049 - prussian blue (header and footer background)
+#FCFCF6 - not quite white (html background)
+#191a1d - almost black (text) 
+
+#3c1361 - dark purple
+#52307c - medium purple
+#663a82 - purple
+#7c5295 - dark lilac
+#b491c8 - medium lilac
+#bca0dc - light lilac
+#e4d9f1 - lighter lilac
+#efe8f6 - lightest lilac
+
+
+
+
+Fonts:
+font-family: 'Oxygen', sans-serif;    
+font-family: 'Cantarell', sans-serif;
+
+/* Global styles
+------------------------------------*/
+html {
+  background-color: #FCFCF6;  /* not quite white */
+  font-family: 'Cantarell', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} /* this avoids a horizontal scroll bar */
+
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  padding-top: 60px;
+  margin: 0px 0px 5px;
+}
+h4 {
+  color: #efe8f6; /* #e4d9f1; /* - lighter lilac #efe8f6;  lightest lilac */
+  font-size: 21px;
+  margin: 5px 0px 20px;
+}
+
+header, footer {
+  color: #FCFCF6;  /* not quite white */
+  font-weight: bold;
+  background-color: #003049; /* prussian blue */
+  margin: 0 -9999rem; /* full-width bars */
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+}
+
+a {
+  font-size: 18px;
+  color: #bca0dc;
+  text-decoration: none;
+  padding: 0px 41px 10px 0px;
+}
+a:hover {
+  color: #7c5295;
+  text-decoration: none;
+}
+
+/*.content-wrap {
+  padding: 30px 30px 60px;
+}
+*/
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.name {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.section {
+  font-size: 17px;
+  color: #191a1d; /* almost black */
+}
+
+
+
+/* Portfolio
+------------------------------------*/
+.section-projects {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #efe8f6;
+}
+
+.projects-header {
+  background-color: #efe8f6;
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2, p {
+  margin: 0;
+}
+
+.projects-heading h2 p {
+  font-family: 'Oxygen', sans-serif;
+  margin: 0; 
+}
+
+.projects-body {
+  max-width: 1400px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #efe8f6;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  gap: 10px;
+}
+.project-item {
+  background-color: #e4d9f1;
+  border: 2px solid #663a82;
+}
+
+.project-content {
+  background-color: #e4d9f1;
+  padding: 5px;
+}
+
+.btn {
+  color: #7c5295;
+}
+
+.btn a:hover {
+  color: #bca0dc;
+}
+
